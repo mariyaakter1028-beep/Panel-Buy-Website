@@ -1,1 +1,143 @@
-<h1>Panels Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Panels</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:220px;
+height:100%;
+background:#1e293b;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+padding:12px 20px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#334155;
+}
+
+.main{
+margin-left:220px;
+padding:20px;
+}
+
+.panel{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.buy-btn{
+background:#16a34a;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.payment{
+display:none;
+margin-top:10px;
+padding:10px;
+background:#334155;
+border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2 style="text-align:center">🚀 Panel Hub</h2>
+
+<a href="../index.html">🏠 Dashboard</a>
+<a href="panels.html">🛒 Buy Panel</a>
+<a href="orders.html">📦 My Orders</a>
+<a href="payment.html">💰 Payments</a>
+<a href="profile.html">👤 Profile</a>
+<a href="support.html">📞 Support</a>
+</div>
+
+<div class="main">
+
+<h1>🛒 Buy Panels</h1>
+<br>
+
+<div class="panel">
+<h3>WhatsApp Panel</h3>
+<p>Price: $10</p>
+<button class="buy-btn" onclick="showPayment(this)">Buy Now</button>
+
+<div class="payment">
+<p><b>bKash:</b> 017XXXXXXXX</p>
+<p><b>Nagad:</b> 018XXXXXXXX</p>
+<p><b>Binance Pay:</b> 123456789</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Telegram Panel</h3>
+<p>Price: $20</p>
+<button class="buy-btn" onclick="showPayment(this)">Buy Now</button>
+
+<div class="payment">
+<p><b>bKash:</b> 017XXXXXXXX</p>
+<p><b>Nagad:</b> 018XXXXXXXX</p>
+<p><b>Binance Pay:</b> 123456789</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Facebook Panel</h3>
+<p>Price: $30</p>
+<button class="buy-btn" onclick="showPayment(this)">Buy Now</button>
+
+<div class="payment">
+<p><b>bKash:</b> 017XXXXXXXX</p>
+<p><b>Nagad:</b> 018XXXXXXXX</p>
+<p><b>Binance Pay:</b> 123456789</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function showPayment(btn){
+let payment = btn.nextElementSibling;
+
+if(payment.style.display==="block"){
+payment.style.display="none";
+}else{
+payment.style.display="block";
+}
+}
+</script>
+
+</body>
+  </html>
