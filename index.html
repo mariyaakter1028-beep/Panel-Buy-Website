@@ -1,3 +1,44 @@
 <!DOCTYPE html>
-<html><head><title>Dashboard</title><link rel="stylesheet" href="css/style.css"></head>
-<body><h1>Dashboard</h1><p>Website starter files ready.</p></body></html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panel Dashboard</title>
+<style>
+body{font-family:Arial;margin:0;background:#0f172a;color:#fff}
+.header{padding:15px;background:#1e293b;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;padding:15px}
+.card,.menu div{background:#1e293b;padding:15px;border-radius:10px}
+.menu{padding:15px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+</style>
+</head>
+<body>
+<div class="header"><h1>Panel Buy Dashboard</h1></div>
+
+<div class="cards">
+<div class="card">📦 Total Panels: 25</div>
+<div class="card">🛒 Orders Today: 12</div>
+<div class="card">👥 Active Users: 180</div>
+<div class="card">🟢 Support: Online</div>
+</div>
+
+<div class="menu">
+<div>🏠 Dashboard</div>
+<div>🛒 Buy Panel</div>
+<div>📦 My Orders</div>
+<div>💰 Payments</div>
+<div>🎁 Offers</div>
+<div>📢 Notices</div>
+<div>👤 Profile</div>
+<div>📞 Support</div>
+<div>⚙️ Admin</div>
+</div>
+
+<div style="padding:15px">
+<h2>Payment Methods</h2>
+<p>bKash: 017XXXXXXXX</p>
+<p>Nagad: 018XXXXXXXX</p>
+<p>Binance Pay ID: 123456789</p>
+</div>
+</body>
+</html>
