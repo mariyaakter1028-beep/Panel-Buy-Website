@@ -1,44 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Panel Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Buy Dashboard</title>
+
 <style>
-body{font-family:Arial;margin:0;background:#0f172a;color:#fff}
-.header{padding:15px;background:#1e293b;text-align:center}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;padding:15px}
-.card,.menu div{background:#1e293b;padding:15px;border-radius:10px}
-.menu{padding:15px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:220px;
+height:100%;
+background:#1e293b;
+padding-top:20px;
+overflow:auto;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:12px 20px;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:#334155;
+}
+
+.main-content{
+margin-left:220px;
+}
+
+.header{
+padding:15px;
+background:#1e293b;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:10px;
+padding:15px;
+}
+
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.section{
+padding:15px;
+}
+
+.panel-box{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.buy-btn{
+background:#16a34a;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+.buy-btn:hover{
+background:#15803d;
+}
 </style>
 </head>
+
 <body>
-<div class="header"><h1>Panel Buy Dashboard</h1></div>
+
+<div class="sidebar">
+<h2>🚀 Panel Hub</h2>
+
+<a href="#">🏠 Dashboard</a>
+<a href="#">🛒 Buy Panel</a>
+<a href="#">📦 My Orders</a>
+<a href="#">💰 Payments</a>
+<a href="#">🎁 Offers</a>
+<a href="#">📢 Notices</a>
+<a href="#">👤 Profile</a>
+<a href="#">📞 Support</a>
+<a href="#">⚙️ Admin</a>
+
+</div>
+
+<div class="main-content">
+
+<div class="header">
+<h1>Panel Buy Dashboard</h1>
+</div>
 
 <div class="cards">
-<div class="card">📦 Total Panels: 25</div>
-<div class="card">🛒 Orders Today: 12</div>
-<div class="card">👥 Active Users: 180</div>
-<div class="card">🟢 Support: Online</div>
+<div class="card">
+<h3>📦 Total Panels</h3>
+<p>25</p>
 </div>
 
-<div class="menu">
-<div>🏠 Dashboard</div>
-<div>🛒 Buy Panel</div>
-<div>📦 My Orders</div>
-<div>💰 Payments</div>
-<div>🎁 Offers</div>
-<div>📢 Notices</div>
-<div>👤 Profile</div>
-<div>📞 Support</div>
-<div>⚙️ Admin</div>
+<div class="card">
+<h3>🛒 Orders Today</h3>
+<p>12</p>
 </div>
 
-<div style="padding:15px">
-<h2>Payment Methods</h2>
-<p>bKash: 017XXXXXXXX</p>
-<p>Nagad: 018XXXXXXXX</p>
-<p>Binance Pay ID: 123456789</p>
+<div class="card">
+<h3>👥 Active Users</h3>
+<p>180</p>
 </div>
+
+<div class="card">
+<h3>🟢 Support</h3>
+<p>Online</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🛒 Available Panels</h2>
+
+<div class="panel-box">
+<h3>Panel 1</h3>
+<p>Price: $10</p>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+<div class="panel-box">
+<h3>Panel 2</h3>
+<p>Price: $20</p>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+<div class="panel-box">
+<h3>Panel 3</h3>
+<p>Price: $30</p>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+</div>
+
+<div class="section">
+<h2>💰 Payment Methods</h2>
+
+<div class="panel-box">
+<p><b>bKash:</b> 017XXXXXXXX</p>
+<p><b>Nagad:</b> 018XXXXXXXX</p>
+<p><b>Binance Pay ID:</b> 123456789</p>
+</div>
+</div>
+
+<div class="section">
+<h2>📢 Latest Notice</h2>
+
+<div class="panel-box">
+<p>Welcome to our panel store. New offers coming soon!</p>
+</div>
+</div>
+
+</div>
+
 </body>
-</html>
+  </html>
